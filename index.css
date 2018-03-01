@@ -18,7 +18,7 @@ a {
 
 .container {
 	position: absolute;
-	top: 40%;
+	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -39,14 +39,14 @@ a {
 
 .btn {
   background-color: none;
-  width:75%;
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .modal-window {
-  position: fixed;
+	position: fixed;
 	text-align: center;
   background-color: rgba(255, 255, 255, 0.15);
+	border: 1pt solid #1d1d1b;
   top: 0;
   right: 0;
   bottom: 0;
