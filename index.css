@@ -32,6 +32,13 @@ a {
   text-align: center;
 }
 
+.btn {
+  background-color: none;
+  padding: 1em 3em;
+  width:75%;
+  text-decoration: none;
+}
+
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.15);
