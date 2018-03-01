@@ -47,6 +47,7 @@ a {
 
 .modal-window {
   position: fixed;
+	text-align: center;
   background-color: rgba(255, 255, 255, 0.15);
   top: 0;
   right: 0;
