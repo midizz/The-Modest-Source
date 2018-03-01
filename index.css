@@ -5,6 +5,7 @@ body {
 	background: white;
 }
 #main {
+	  background-clip: padding-box;
     position: absolute;
      margin: auto;
      top: 0;
