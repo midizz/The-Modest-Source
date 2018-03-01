@@ -1,24 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
-	background: white;
-}
-#main {
-	  background-clip: padding-box;
-    position: absolute;
-     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-	width: 50%;
-	height: 50%;
-	text-align: center;
-	font-family: "Oswald", sans-serif;
-	font-size: 18pt;
-	color: #1D1D1B;
-}
 #social {
 	position: absolute;
 	width: auto;
@@ -30,6 +12,41 @@ body {
 	height: 30px;
 	padding: 5px;
 }
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  padding: 2rem;
+  background-color: #5A7A9B;
+  color: #5A7A9B
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.interior {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn {
+  background-color: #fff;
+  padding: 1em 3em;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.15);
