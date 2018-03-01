@@ -27,8 +27,8 @@ a {
 	right: 0;
 	bottom: 0;
 	margin: auto;
-  width: 90%;
-  height: 90%;
+  width: 75%;
+  height: auto;
 }
 
 .interior {
