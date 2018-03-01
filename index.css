@@ -30,51 +30,56 @@ body {
 	height: 30px;
 	padding: 5px;
 }
-.overlay {
+.modal-window {
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.15);
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
+  z-index: 999;
   opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.overlay:target {
-  visibility: visible;
+
+.modal-window:target {
   opacity: 1;
+  pointer-events: auto;
 }
 
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
+.modal-window>div {
+  width: 400px;
   position: relative;
-  transition: all 5s ease-in-out;
+  margin: 10% auto;
+  padding: 2rem;
+  background: #fff;
+  color: #444;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
+.modal-window header {
   font-weight: bold;
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
   text-decoration: none;
-  color: #333;
 }
-.popup .close:hover {
-  color: #06D85F;
+
+.modal-close:hover {
+  color: #000;
 }
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
 }
